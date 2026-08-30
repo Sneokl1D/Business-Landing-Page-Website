@@ -148,7 +148,7 @@ Business Landing Page Website/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/your-repository-name.git
+git clone https://github.com/Sneokl1D/Business-Landing-Page-Website.git
 ```
 
 ### 2. Open the project
@@ -156,7 +156,7 @@ git clone https://github.com/your-username/your-repository-name.git
 Navigate to the project directory:
 
 ```bash
-cd your-repository-name
+cd Business-Landing-Page-Website.git
 ```
 
 ### 3. Run the website
@@ -265,7 +265,7 @@ If third-party templates, assets, fonts, icons, libraries, or other resources ar
 
 ## 👨‍💻 Author
 
-**Your Name**
+**Monetz Hartz**
 
 PHP FullStack Developer
 
