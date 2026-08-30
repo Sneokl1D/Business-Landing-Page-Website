@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Monetz</title>
+    <link rel="stylesheet" href="blog.css">
+    <!-- Brevo Form CSS -->
+    <link
+        rel="stylesheet"
+        href="https://sibforms.com/forms/end-form/build/sib-styles.css"
+    >
+    <!-- Brevo Form Custom Overrides -->
+    <style>
+        /* Keep Brevo's helper field completely invisible */
+        .input--hidden {
+            display: none !important;
+            visibility: hidden !important;
+            width: 0 !important;
+            height: 0 !important;
+            position: absolute !important;
+            left: -9999px !important;
+        }
+        /* Keep the Brevo form inside your existing newsletter design */
+        .newsletter-band .sib-form {
+            width: 100%;
+            background: transparent !important;
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+        .newsletter-band .sib-form-container {
+            width: 100%;
+            background: transparent !important;
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+        .newsletter-band #sib-container {
+            width: 100% !important;
+            max-width: none !important;
+            background: transparent !important;
+            border: 0 !important;
+            padding: 0 !important;
+            margin: 0 !important;
+            box-shadow: none !important;
+        }
+        /* Hide Brevo's generated title and description */
+        .newsletter-band .sib-form-block {
+            padding: 0 !important;
+        }
+        .newsletter-band .brevo-title,
+        .newsletter-band .brevo-description {
+            display: none !important;
+        }
+        /* Remove Brevo's generated label/specification */
+        .newsletter-band .entry__label,
+        .newsletter-band .entry__specification {
+            display: none !important;
+        }
+        /* Keep the input and button on one row */
+        .newsletter-band .sib-input,
+        .newsletter-band .form__entry,
+        .newsletter-band .form__label-row {
+            width: 100%;
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+        .newsletter-band .entry__field {
+            width: 100%;
+            border: 0 !important;
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+        .newsletter-band #EMAIL {
+            box-sizing: border-box;
+        }
+        /* Use your existing newsletter form layout */
+        .newsletter-band #sib-form {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            width: 100%;
+        }
+        .newsletter-band #sib-form > .sib-input {
+            flex: 1;
+            min-width: 0;
+        }
+        .newsletter-band #sib-form > .sib-form-block {
+            flex-shrink: 0;
+        }
+        /* Hide Brevo's loader icon unless needed */
+        .newsletter-band .sib-hide-loader-icon {
+            display: none !important;
+        }
+        /* Brevo success/error messages */
+        .newsletter-band .sib-form-message-panel {
+            width: 100%;
+            max-width: none !important;
+            box-sizing: border-box;
+            margin-bottom: 12px;
+            padding: 10px 14px !important;
+            border-radius: 8px !important;
+        }
+        .newsletter-band .sib-form-message-panel__text {
+            font-size: 14px !important;
+        }
+        /* Brevo field validation error */
+        .newsletter-band .entry__error {
+            display: block;
+            margin-top: 6px !important;
+            padding: 0 !important;
+            background: transparent !important;
+            border: 0 !important;
+            font-size: 13px !important;
+        }
+        /* Mobile */
+        @media (max-width: 600px) {
+            .newsletter-band #sib-form {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            .newsletter-band #sib-form > .sib-input,
+            .newsletter-band #sib-form > .sib-form-block {
+                width: 100%;
+            }
+            .newsletter-band #sib-form button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-redux">
+                <div class="snowflake">
+                    <span class="arm">
+                        <span class="branch-bottom-l"></span>
+                        <span class="branch-bottom-r"></span>
+                    </span>
+                    <span class="arm">
+                        <span class="branch-bottom-l"></span>
+                        <span class="branch-bottom-r"></span>
+                    </span>
+                    <span class="arm">
+                        <span class="branch-bottom-l"></span>
+                        <span class="branch-bottom-r"></span>
+                    </span>
+                </div>
+            </div>
+            <div style="
+                color: var(--accent-purple);
+                font-size: 18px;
+                text-transform: uppercase;
+                letter-spacing: 3px;
+            ">
+                Loading...
+            </div>
+        </div>
+    </div>
+    <!-- Navigation Header -->
+    <header class="header" id="header">
+        <nav class="nav-container">
+            <a href="../index.html#home" class="logo">
+                <div class="logo-icon">
+                    <div class="logo-redux">
+                        <div class="snowflake">
+                            <span class="arm">
+                                <span class="branch-bottom-l"></span>
+                                <span class="branch-bottom-r"></span>
+                            </span>
+                            <span class="arm">
+                                <span class="branch-bottom-l"></span>
+                                <span class="branch-bottom-r"></span>
+                            </span>
+                            <span class="arm">
+                                <span class="branch-bottom-l"></span>
+                                <span class="branch-bottom-r"></span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <span class="logo-text">
+                    <span class="redux">snow</span>
+                    <span class="lax">flake</span>
+                </span>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li>
+                    <a href="../index.html#home" class="nav-link">Home</a>
+                </li>
+                <li>
+                    <a href="../company/about.html#about" class="nav-link">About</a>
+                </li>
+                <li>
+                    <a href="../company/team.html" class="nav-link">Team</a>
+                </li>
+                <li>
+                    <a href="blog.html" class="nav-link active">Blog</a>
+                </li>
+                <li>
+                    <a href="../index.html#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+    <!-- Page Header -->
+    <section class="blog-page-header" id="home">
+        <div class="breadcrumb">
+            <a href="../index.html#home">Home</a> / Blog
+        </div>
+        <h1>Blog</h1>
+        <p>
+            Notes on building web, mobile, cloud, and AI products —
+            from the team that ships them.
+        </p>
+    </section>
+    <!-- Featured Post -->
+    <div class="featured-post">
+        <a href="#" class="featured-post-card">
+            <div class="featured-post-image">
+                <img src="../images/image.png" alt="Designing Interfaces Nobody Has to Think About">
+            </div>
+            <div class="featured-post-body">
+                <span class="category-badge">
+                    Engineering
+                </span>
+                <h2 class="featured-post-title">
+                    Why We Stopped Using Templates for Client Sites
+                </h2>
+                <p class="featured-post-excerpt">
+                    Templates save time upfront and cost it later.
+                    Here's what changed when we started building every
+                    client site from scratch — and why it's actually faster now.
+                </p>
+                <div class="post-meta">
+                    <div class="post-meta-avatar">
+                        JK
+                    </div>
+                    <div class="post-meta-text">
+                        <strong>Jordan Kim</strong>
+                        Jan 18, 2026 · 6 min read
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+    <!-- Filter Tabs + Grid -->
+    <section class="blog-index-section" id="posts">
+        <div class="skill-categories" id="blogFilters">
+            <div class="category-tab active" data-cat="all">
+                All
+            </div>
+            <div class="category-tab" data-cat="engineering">
+                Engineering
+            </div>
+            <div class="category-tab" data-cat="design">
+                Design
+            </div>
+            <div class="category-tab" data-cat="business">
+                Business
+            </div>
+            <div class="category-tab" data-cat="ai">
+                AI
+            </div>
+        </div>
+        <div class="blog-grid" id="blogGrid">
+            <a href="#" class="article-card" data-cat="design">
+                <div class="article-card-image">
+                    <img src="../images/post_image_0.jpeg" alt="Designing Interfaces Nobody Has to Think About">
+                </div>
+                <div class="article-card-body">
+                    <span class="category-badge">
+                        Design
+                    </span>
+                    <h3 class="article-card-title">
+                        Designing Interfaces Nobody Has to Think About
+                    </h3>
+                    <p class="article-card-excerpt">
+                        The best UI decisions are the ones users never
+                        notice they're making.
+                    </p>
+                    <div class="post-meta">
+                        <div class="post-meta-avatar">
+                            AR
+                        </div>
+                        <div class="post-meta-text">
+                            <strong>Amara Reyes</strong>
+                            Jan 12, 2026 · 5 min
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="article-card" data-cat="ai">
+                <div class="article-card-image">
+                    <img src="../images/post_image_1.jpeg" alt="Designing Interfaces Nobody Has to Think About">
+                </div>
+                <div class="article-card-body">
+                    <span class="category-badge">
+                        AI
+                    </span>
+                    <h3 class="article-card-title">
+                        Where AI Actually Helps in a Client Project
+                    </h3>
+                    <p class="article-card-excerpt">
+                        Not every feature needs a model behind it.
+                        Here's how we decide.
+                    </p>
+                    <div class="post-meta">
+                        <div class="post-meta-avatar">
+                            SN
+                        </div>
+                        <div class="post-meta-text">
+                            <strong>Sofia Novak</strong>
+                            Jan 8, 2026 · 7 min
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="article-card" data-cat="engineering">
+                <div class="article-card-image">
+                    <img src="../images/post_image_2.jpeg" alt="Designing Interfaces Nobody Has to Think About">
+                </div>
+                <div class="article-card-body">
+                    <span class="category-badge">
+                        Engineering
+                    </span>
+                    <h3 class="article-card-title">
+                        A Deploy Pipeline That Doesn't Wake Anyone Up
+                    </h3>
+                    <p class="article-card-excerpt">
+                        Our CI/CD setup, and the boring decisions
+                        that keep it that way.
+                    </p>
+                    <div class="post-meta">
+                        <div class="post-meta-avatar">
+                            DP
+                        </div>
+                        <div class="post-meta-text">
+                            <strong>Diego Park</strong>
+                            Jan 3, 2026 · 8 min
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="article-card" data-cat="business">
+                <div class="article-card-image">
+                    <img src="../images/post_image_3.jpeg" alt="Designing Interfaces Nobody Has to Think About">
+                </div>
+                <div class="article-card-body">
+                    <span class="category-badge">
+                        Business
+                    </span>
+                    <h3 class="article-card-title">
+                        Why We Cap Our Client Roster at 12 Projects
+                    </h3>
+                    <p class="article-card-excerpt">
+                        Growth isn't always the goal.
+                        Sometimes staying small is the strategy.
+                    </p>
+                    <div class="post-meta">
+                        <div class="post-meta-avatar">
+                            JK
+                        </div>
+                        <div class="post-meta-text">
+                            <strong>Jordan Kim</strong>
+                            Dec 29, 2025 · 4 min
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="article-card hidden-post" data-cat="engineering">
+                <div class="article-card-image">
+                    <img src="../images/post_image_4.jpeg" alt="Designing Interfaces Nobody Has to Think About">
+                </div>
+                <div class="article-card-body">
+                    <span class="category-badge">
+                        Engineering
+                    </span>
+                    <h3 class="article-card-title">
+                        Cross-Platform Mobile Without the Compromise
+                    </h3>
+                    <p class="article-card-excerpt">
+                        React Native, Flutter, or native —
+                        how we actually choose per project.
+                    </p>
+                    <div class="post-meta">
+                        <div class="post-meta-avatar">
+                            RB
+                        </div>
+                        <div class="post-meta-text">
+                            <strong>Ravi Bose</strong>
+                            Dec 20, 2025 · 6 min
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="article-card hidden-post" data-cat="ai">
+                <div class="article-card-image">
+                    <img src="../images/post_image_5.jpeg" alt="Designing Interfaces Nobody Has to Think About">
+                </div>
+                <div class="article-card-body">
+                    <span class="category-badge">
+                        AI
+                    </span>
+                    <h3 class="article-card-title">
+                        Keeping Inference Costs Predictable at Scale
+                    </h3>
+                    <p class="article-card-excerpt">
+                        Caching, prompt design, and model selection
+                        tricks we actually use.
+                    </p>
+                    <div class="post-meta">
+                        <div class="post-meta-avatar">
+                            SN
+                        </div>
+                        <div class="post-meta-text">
+                            <strong>Sofia Novak</strong>
+                            Dec 14, 2025 · 5 min
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="article-card hidden-post" data-cat="design">
+                <div class="article-card-image">
+                    <img src="../images/post_image_6.jpeg" alt="Designing Interfaces Nobody Has to Think About">
+                </div>
+                <div class="article-card-body">
+                    <span class="category-badge">
+                        Design
+                    </span>
+                    <h3 class="article-card-title">
+                        Brand Systems That Survive a Redesign
+                    </h3>
+                    <p class="article-card-excerpt">
+                        How we build design systems flexible enough
+                        to outlast the trend cycle.
+                    </p>
+                    <div class="post-meta">
+                        <div class="post-meta-avatar">
+                            OA
+                        </div>
+                        <div class="post-meta-text">
+                            <strong>Omar Aziz</strong>
+                            Dec 9, 2025 · 5 min
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="article-card hidden-post" data-cat="business">
+                <div class="article-card-image">
+                    <img src="../images/post_image_7.jpeg" alt="Designing Interfaces Nobody Has to Think About">
+                </div>
+                <div class="article-card-body">
+                    <span class="category-badge">
+                        Business
+                    </span>
+                    <h3 class="article-card-title">
+                        What a Discovery Call Should Actually Cover
+                    </h3>
+                    <p class="article-card-excerpt">
+                        The questions we ask before quoting any project,
+                        and why.
+                    </p>
+                    <div class="post-meta">
+                        <div class="post-meta-avatar">
+                            JK
+                        </div>
+                        <div class="post-meta-text">
+                            <strong>Jordan Kim</strong>
+                            Dec 2, 2025 · 4 min
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <button
+            class="btn-secondary blog-load-more"
+            id="loadMoreBtn"
+        >
+            Load More
+        </button>
+    </section>
+
+    <!-- Newsletter -->
+            <div class="newsletter-band">
+                <div class="newsletter-inner">
+                    <div class="newsletter-text">
+                        <h3>Get Posts in Your Inbox</h3>
+                        <p>One email a month, no fluff — just what we're actually learning.</p>
+                    </div>
+                    <form
+                        class="newsletter-form"
+                        method="POST"
+                        action="https://90b57509.sibforms.com/serve/MUIFAOclZMYw5HQGCIhlp6hCRJkBUz1RU4gRyHtAjiv7crrNdUbWIPtGY4bMPa748q9dtdS6lQNEWYUfDqX91AU2NL1kHZczPOOfbNCLnuoCpo56e-96g_RCkshVjLZFDeYbEoPev0LIbxGBqpQaGvs3lsDk7L841-uRETJvJvv6ahfOACWCgdNNkXb70vZPEo0yYkgVcDJzh08MJg=="
+                    >
+                        <input
+                            type="email"
+                            name="EMAIL"
+                            placeholder="you@example.com"
+                            required
+                        >
+                        <input
+                            type="text"
+                            name="email_address_check"
+                            value=""
+                            tabindex="-1"
+                            autocomplete="off"
+                            style="display:none;"
+                        >
+                        <input
+                            type="hidden"
+                            name="locale"
+                            value="en"
+                        >
+                        <button type="submit">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <div class="logo-icon">
+                        <div class="logo-redux">
+                            <div class="snowflake">
+                                <span class="arm">
+                                    <span class="branch-bottom-l"></span>
+                                    <span class="branch-bottom-r"></span>
+                                </span>
+                                <span class="arm">
+                                    <span class="branch-bottom-l"></span>
+                                    <span class="branch-bottom-r"></span>
+                                </span>
+                                <span class="arm">
+                                    <span class="branch-bottom-l"></span>
+                                    <span class="branch-bottom-r"></span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="logo-text">
+                        <span class="redux">snow</span>
+                        <span class="lax">flake</span>
+                    </span>
+                </div>
+                <p class="footer-description">
+                    Loading complex challenges into brilliant solutions
+                    through the convergence of art, science, and technology.
+                </p>
+                <div class="footer-social">
+                    <a href="#" class="social-icon">f</a>
+                    <a href="#" class="social-icon">t</a>
+                    <a href="#" class="social-icon">in</a>
+                    <a href="#" class="social-icon">ig</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Services</h4>
+                <div class="footer-links">
+                    <a href="../services/web_development.html">
+                        Web Development
+                    </a>
+                    <a href="../services/app_development.html">
+                        App Development
+                    </a>
+                    <a href="../services/cloud_solutions.html">
+                        Cloud Solutions
+                    </a>
+                    <a href="../services/ai_integration.html">
+                        AI Integration
+                    </a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Company</h4>
+                <div class="footer-links">
+                    <a href="../company/about.html">
+                        About Us
+                    </a>
+                    <a href="../company/team.html">
+                        Our Team
+                    </a>
+                    <a href="../company/careers.html">
+                        Careers
+                    </a>
+                    <a href="../company/press_kit.html">
+                        Press Kit
+                    </a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Resources</h4>
+                <div class="footer-links">
+                    <a href="docs.html">
+                        Documentation
+                    </a>
+                    <a href="api_reference.html">
+                        API Reference
+                    </a>
+                    <a href="blog.html">
+                        Blog
+                    </a>
+                    <a href="support.html">
+                        Support
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="copyright">
+                © 2026 Monetz. All rights reserved.
+            </div>
+            <div class="footer-credits">
+                Designed by
+                <a href="#" rel="nofollow" target="_blank">
+                    Monetz
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Your existing blog JavaScript -->
+    <script src="blog.js"></script>
+
+    <!-- Brevo Configuration -->
+    <script>
+        window.REQUIRED_CODE_ERROR_MESSAGE =
+            'Please choose a country code';
+
+        window.LOCALE = 'en';
+        
+        window.EMAIL_INVALID_MESSAGE =
+            'The information provided is invalid. Please review the field format and try again.';
+
+        window.SMS_INVALID_MESSAGE =
+            'The information provided is invalid. Please review the field format and try again.';
+
+        window.REQUIRED_ERROR_MESSAGE =
+            'This field cannot be left blank.';
+
+        window.GENERIC_INVALID_MESSAGE =
+            'The information provided is invalid. Please review the field format and try again.';
+
+        window.INVALID_NUMBER =
+            'The information provided is invalid. Please review the field format and try again.';
+
+        window.INVALID_DATE =
+            'Please enter a valid date';
+
+        window.REQUIRED_MULTISELECT_MESSAGE =
+            'Please select at least 1 option';
+
+        window.translation = {
+            common: {
+                selectedList: '{quantity} list selected',
+                selectedLists: '{quantity} lists selected',
+                selectedOption: '{quantity} selected',
+                selectedOptions: '{quantity} selected'
+            }
+        };
+
+        var AUTOHIDE = Boolean(0);
+    </script>
+
+    <!-- Brevo JavaScript -->
+    <script
+        defer
+        src="https://sibforms.com/forms/end-form/build/main.js">
+    </script>
+
+</body>
+</html>

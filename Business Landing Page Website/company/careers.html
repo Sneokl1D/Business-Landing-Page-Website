@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers - Monetz</title>
+    <link rel="stylesheet" href="careers.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-redux">
+                <div class="snowflake">
+                    <span class="arm">
+                        <span class="branch-bottom-l"></span>
+                        <span class="branch-bottom-r"></span>
+                    </span>
+                    <span class="arm">
+                        <span class="branch-bottom-l"></span>
+                        <span class="branch-bottom-r"></span>
+                    </span>
+                    <span class="arm">
+                        <span class="branch-bottom-l"></span>
+                        <span class="branch-bottom-r"></span>
+                    </span>
+                </div>
+            </div>
+            <div style="color: var(--accent-purple); font-size: 18px; text-transform: uppercase; letter-spacing: 3px;">Loading...</div>
+        </div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="header" id="header">
+        <nav class="nav-container">
+            <a href="../index.html#home" class="logo">
+                <div class="logo-icon">
+                    <div class="logo-redux">
+                        <div class="snowflake">
+                            <span class="arm">
+                                <span class="branch-bottom-l"></span>
+                                <span class="branch-bottom-r"></span>
+                            </span>
+                            <span class="arm">
+                                <span class="branch-bottom-l"></span>
+                                <span class="branch-bottom-r"></span>
+                            </span>
+                            <span class="arm">
+                                <span class="branch-bottom-l"></span>
+                                <span class="branch-bottom-r"></span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <span class="logo-text">
+                    <span class="redux">snow</span>
+                    <span class="lax">flake</span>
+                </span>
+            </a>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="../index.html#home" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="team.html" class="nav-link">Team</a></li>
+                <li><a href="careers.html" class="nav-link active">Careers</a></li>
+                <li><a href="../index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero with Marquee -->
+    <section class="careers-hero" id="home">
+        <div class="breadcrumb">
+            <a href="../index.html#home">Home</a> / Careers
+        </div>
+        <h1>Join the Team</h1>
+        <p>
+            We hire slowly and stay small on purpose. If a role opens up, it's because
+            the work genuinely needs another senior person — not to hit a headcount goal.
+        </p>
+
+        <div class="marquee">
+            <div class="marquee-track">
+                <span>Remote-First</span>
+                <span>Flexible Hours</span>
+                <span>Health Coverage</span>
+                <span>Senior-Only Team</span>
+                <span>Real Ownership</span>
+                <span>No Bureaucracy</span>
+                <span>Remote-First</span>
+                <span>Flexible Hours</span>
+                <span>Health Coverage</span>
+                <span>Senior-Only Team</span>
+                <span>Real Ownership</span>
+                <span>No Bureaucracy</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Zigzag Benefits -->
+    <section class="benefits-section" id="benefits">
+        <div class="section-header">
+            <h2 class="section-title">Why Work Here</h2>
+            <p class="section-subtitle">The parts that don't show up in a job description</p>
+        </div>
+
+        <div class="benefit-row">
+            <div class="benefit-icon-block">🌍</div>
+            <div class="benefit-text">
+                <h3>Work From Anywhere</h3>
+                <p>
+                    Fully remote across five timezones. We sync where it matters and stay
+                    out of your way the rest of the time.
+                </p>
+            </div>
+        </div>
+
+        <div class="benefit-row">
+            <div class="benefit-icon-block">🕒</div>
+            <div class="benefit-text">
+                <h3>Flexible Hours</h3>
+                <p>
+                    We care about shipped work, not clocked hours. Structure your day
+                    around when you actually do your best work.
+                </p>
+            </div>
+        </div>
+
+        <div class="benefit-row">
+            <div class="benefit-icon-block">🎯</div>
+            <div class="benefit-text">
+                <h3>Real Ownership</h3>
+                <p>
+                    No layers of approval between you and the client. You scope it, you
+                    build it, you ship it — and you get the credit.
+                </p>
+            </div>
+        </div>
+
+        <div class="benefit-row">
+            <div class="benefit-icon-block">📚</div>
+            <div class="benefit-text">
+                <h3>Learning Budget</h3>
+                <p>
+                    An annual budget for courses, books, and conferences — spend it on
+                    whatever actually moves your skills forward.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Open Positions Accordion -->
+    <section class="positions-section" id="positions">
+        <div class="section-header">
+            <h2 class="section-title">Open Positions</h2>
+            <p class="section-subtitle">Click a role to see the details</p>
+        </div>
+
+        <div class="positions-list" id="positionsList">
+            <div class="position-item">
+                <div class="position-header">
+                    <div class="position-header-left">
+                        <span class="position-title">Senior Backend Engineer</span>
+                        <div class="position-meta">
+                            <span class="dept-tag">Engineering</span>
+                            <span class="dept-tag">Remote</span>
+                            <span class="dept-tag">Full-Time</span>
+                        </div>
+                    </div>
+                    <div class="position-toggle">+</div>
+                </div>
+                <div class="position-body">
+                    <p>
+                        You'll own backend architecture across client projects — API design,
+                        database schema, and performance work. We're looking for someone
+                        comfortable owning a system end to end, not just a ticket queue.
+                    </p>
+                    <a href="../index.html#contact" class="btn-primary">Apply Now</a>
+                </div>
+            </div>
+
+            <div class="position-item">
+                <div class="position-header">
+                    <div class="position-header-left">
+                        <span class="position-title">Product Designer</span>
+                        <div class="position-meta">
+                            <span class="dept-tag">Design</span>
+                            <span class="dept-tag">Remote</span>
+                            <span class="dept-tag">Full-Time</span>
+                        </div>
+                    </div>
+                    <div class="position-toggle">+</div>
+                </div>
+                <div class="position-body">
+                    <p>
+                        You'll design interfaces for client products from first wireframe to
+                        final handoff, working directly with engineering — no separate
+                        design-ops layer to go through.
+                    </p>
+                    <a href="../index.html#contact" class="btn-primary">Apply Now</a>
+                </div>
+            </div>
+
+            <div class="position-item">
+                <div class="position-header">
+                    <div class="position-header-left">
+                        <span class="position-title">Cloud Infrastructure Engineer</span>
+                        <div class="position-meta">
+                            <span class="dept-tag">Cloud &amp; AI</span>
+                            <span class="dept-tag">Remote</span>
+                            <span class="dept-tag">Contract</span>
+                        </div>
+                    </div>
+                    <div class="position-toggle">+</div>
+                </div>
+                <div class="position-body">
+                    <p>
+                        You'll design and maintain client infrastructure — CI/CD pipelines,
+                        containerized deployments, and monitoring — across AWS and GCP.
+                    </p>
+                    <a href="../index.html#contact" class="btn-primary">Apply Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote -->
+    <section class="quote-section">
+        <div class="quote-mark">"</div>
+        <p class="quote-text">
+            Nobody hands you a project and disappears. You get to talk to the client,
+            make real decisions, and see your work actually ship.
+        </p>
+        <div class="quote-author">Lena Cho, Frontend Engineer</div>
+    </section>
+
+    <!-- CTA -->
+    <div class="cta-banner">
+        <h2>Don't See Your Role?</h2>
+        <p>We don't always have an open listing for the right person. Reach out anyway.</p>
+        <a href="../index.html#contact" class="btn-light">Get In Touch</a>
+    </div>
+
+    <br><br>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <div class="logo-icon">
+                        <div class="logo-redux">
+                            <div class="snowflake">
+                                <span class="arm">
+                                    <span class="branch-bottom-l"></span>
+                                    <span class="branch-bottom-r"></span>
+                                </span>
+                                <span class="arm">
+                                    <span class="branch-bottom-l"></span>
+                                    <span class="branch-bottom-r"></span>
+                                </span>
+                                <span class="arm">
+                                    <span class="branch-bottom-l"></span>
+                                    <span class="branch-bottom-r"></span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="logo-text">
+                        <span class="redux">snow</span>
+                        <span class="lax">flake</span>
+                    </span>
+                </div>
+                <p class="footer-description">
+                    Loading complex challenges into brilliant solutions through the convergence of art, science, and technology.
+                </p>
+                <div class="footer-social">
+                    <a href="#" class="social-icon">f</a>
+                    <a href="#" class="social-icon">t</a>
+                    <a href="#" class="social-icon">in</a>
+                    <a href="#" class="social-icon">ig</a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h4>Services</h4>
+                <div class="footer-links">
+                    <a href="../services/web_development.html">Web Development</a>
+                    <a href="../services/app_development.html">App Development</a>
+                    <a href="../services/cloud_solutions.html">Cloud Solutions</a>
+                    <a href="../services/ai_integration.html">AI Integration</a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h4>Company</h4>
+                <div class="footer-links">
+                    <a href="about.html">About Us</a>
+                    <a href="team.html">Our Team</a>
+                    <a href="careers.html">Careers</a>
+                    <a href="press_kit.html">Press Kit</a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h4>Resources</h4>
+                <div class="footer-links">
+                    <a href="../resources/docs.html">Documentation</a>
+                    <a href="../resources/api_reference.html">API Reference</a>
+                    <a href="../resources/blog.html">Blog</a>
+                    <a href="../resources/support.html">Support</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="copyright">
+                © 2026 Monetz. All rights reserved.
+            </div>
+            <div class="footer-credits">
+                Designed by <a href="#" rel="nofollow" target="_blank">Monetz</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="careers.js"></script>
+</body>
+</html>
