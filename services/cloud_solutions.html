@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Solutions - Monetz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-redux">
+                <div class="snowflake">
+                    <span class="arm">
+                        <span class="branch-bottom-l"></span>
+                        <span class="branch-bottom-r"></span>
+                    </span>
+                    <span class="arm">
+                        <span class="branch-bottom-l"></span>
+                        <span class="branch-bottom-r"></span>
+                    </span>
+                    <span class="arm">
+                        <span class="branch-bottom-l"></span>
+                        <span class="branch-bottom-r"></span>
+                    </span>
+                </div>
+            </div>
+            <div style="color: var(--accent-purple); font-size: 18px; text-transform: uppercase; letter-spacing: 3px;">Loading...</div>
+        </div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="header" id="header">
+        <nav class="nav-container">
+            <a href="../index.html#home" class="logo">
+                <div class="logo-icon">
+                    <div class="logo-redux">
+                        <div class="snowflake">
+                            <span class="arm">
+                                <span class="branch-bottom-l"></span>
+                                <span class="branch-bottom-r"></span>
+                            </span>
+                            <span class="arm">
+                                <span class="branch-bottom-l"></span>
+                                <span class="branch-bottom-r"></span>
+                            </span>
+                            <span class="arm">
+                                <span class="branch-bottom-l"></span>
+                                <span class="branch-bottom-r"></span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <span class="logo-text">
+                    <span class="redux">snow</span>
+                    <span class="lax">flake</span>
+                </span>
+            </a>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="../index.html#home" class="nav-link">Home</a></li>
+                <li><a href="../index.html#about" class="nav-link">About</a></li>
+                <li><a href="../index.html#stats" class="nav-link">Metrics</a></li>
+                <li><a href="../index.html#skills" class="nav-link">Arsenal</a></li>
+                <li><a href="#contact" class="nav-link active">Contact</a></li>
+            </ul>
+
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero" id="home">
+        <div class="breadcrumb">
+            <a href="../index.html#home">Home</a> / Services / Cloud Solutions
+        </div>
+        <h1>Cloud Solutions</h1>
+        <p>
+            Scalable, secure cloud infrastructure — from initial migration to fully
+            automated CI/CD pipelines that keep your team shipping without downtime.
+        </p>
+        <div class="hero-cta-group">
+            <a href="#contact" class="btn-primary">Get a Quote</a>
+            <a href="#process" class="btn-secondary">See the Process</a>
+        </div>
+    </section>
+
+    <!-- What's Included -->
+    <section class="philosophy-section" id="included">
+        <div class="philosophy-container">
+            <div class="redux-line"></div>
+
+            <h2 class="philosophy-headline">What's Included</h2>
+
+            <p class="philosophy-subheading">
+                Every setup is tailored to your workload, but these are the pillars every
+                Cloud Solutions engagement is built on.
+            </p>
+
+            <div class="philosophy-pillars">
+                <div class="pillar">
+                    <div class="pillar-icon">📈</div>
+                    <h3 class="pillar-title">Auto-Scaling Infrastructure</h3>
+                    <p class="pillar-description">
+                        Architecture that grows with traffic and shrinks with it too, so
+                        you're never over-paying for idle capacity.
+                    </p>
+                </div>
+
+                <div class="pillar">
+                    <div class="pillar-icon">🔁</div>
+                    <h3 class="pillar-title">CI/CD Pipelines</h3>
+                    <p class="pillar-description">
+                        Automated build, test, and deploy pipelines so every push ships
+                        safely without manual steps.
+                    </p>
+                </div>
+
+                <div class="pillar">
+                    <div class="pillar-icon">🛡️</div>
+                    <h3 class="pillar-title">Security & Compliance</h3>
+                    <p class="pillar-description">
+                        Locked-down networking, least-privilege access, and encrypted data
+                        at rest and in transit by default.
+                    </p>
+                </div>
+
+                <div class="pillar">
+                    <div class="pillar-icon">📦</div>
+                    <h3 class="pillar-title">Containerized Deployments</h3>
+                    <p class="pillar-description">
+                        Docker and Kubernetes-based deployments that behave the same in
+                        staging as they do in production.
+                    </p>
+                </div>
+
+                <div class="pillar">
+                    <div class="pillar-icon">📊</div>
+                    <h3 class="pillar-title">Monitoring & Alerts</h3>
+                    <p class="pillar-description">
+                        Real-time dashboards and alerting so issues get caught before your
+                        users notice them.
+                    </p>
+                </div>
+
+                <div class="pillar">
+                    <div class="pillar-icon">💰</div>
+                    <h3 class="pillar-title">Cost Optimization</h3>
+                    <p class="pillar-description">
+                        Right-sized resources and reserved capacity planning to keep your
+                        cloud bill predictable.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process -->
+    <section class="stats-section" id="process">
+        <div class="section-header">
+            <h2 class="section-title">Our Process</h2>
+            <p class="section-subtitle">A straightforward path from audit to fully managed infrastructure</p>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="process-number">01</div>
+                <div class="stat-label">Infrastructure Audit</div>
+                <p class="stat-description">
+                    We review your current setup, traffic patterns, and pain points before
+                    proposing any changes.
+                </p>
+            </div>
+
+            <div class="stat-card">
+                <div class="process-number">02</div>
+                <div class="stat-label">Architecture Design</div>
+                <p class="stat-description">
+                    A migration or infrastructure plan gets signed off with you — including
+                    cost estimates — before we touch anything live.
+                </p>
+            </div>
+
+            <div class="stat-card">
+                <div class="process-number">03</div>
+                <div class="stat-label">Migration & Setup</div>
+                <p class="stat-description">
+                    Infrastructure-as-code builds, staged rollouts, and zero-downtime
+                    migration where it matters most.
+                </p>
+            </div>
+
+            <div class="stat-card">
+                <div class="process-number">04</div>
+                <div class="stat-label">Monitoring & Support</div>
+                <p class="stat-description">
+                    Dashboards, alerting, and ongoing support so your infrastructure keeps
+                    running smoothly after we ship.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack -->
+    <section class="skills-section" id="stack">
+        <div class="skills-container">
+            <div class="section-header">
+                <h2 class="section-title">Tech Stack</h2>
+                <p class="section-subtitle">The tools behind every deployment</p>
+            </div>
+
+            <div class="skills-hexagon-grid">
+                <div class="skill-hexagon">
+                    <div class="hexagon-inner">
+                        <div class="hexagon-content">
+                            <div class="skill-icon-hex">☁️</div>
+                            <div class="skill-name-hex">AWS</div>
+                            <div class="skill-level">
+                                <div class="skill-level-fill" style="width: 94%"></div>
+                            </div>
+                            <div class="skill-percentage-hex">94%</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-hexagon">
+                    <div class="hexagon-inner">
+                        <div class="hexagon-content">
+                            <div class="skill-icon-hex">🌐</div>
+                            <div class="skill-name-hex">Google Cloud</div>
+                            <div class="skill-level">
+                                <div class="skill-level-fill" style="width: 82%"></div>
+                            </div>
+                            <div class="skill-percentage-hex">82%</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-hexagon">
+                    <div class="hexagon-inner">
+                        <div class="hexagon-content">
+                            <div class="skill-icon-hex">🐳</div>
+                            <div class="skill-name-hex">Docker</div>
+                            <div class="skill-level">
+                                <div class="skill-level-fill" style="width: 91%"></div>
+                            </div>
+                            <div class="skill-percentage-hex">91%</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-hexagon">
+                    <div class="hexagon-inner">
+                        <div class="hexagon-content">
+                            <div class="skill-icon-hex">☸️</div>
+                            <div class="skill-name-hex">Kubernetes</div>
+                            <div class="skill-level">
+                                <div class="skill-level-fill" style="width: 85%"></div>
+                            </div>
+                            <div class="skill-percentage-hex">85%</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-hexagon">
+                    <div class="hexagon-inner">
+                        <div class="hexagon-content">
+                            <div class="skill-icon-hex">🏗️</div>
+                            <div class="skill-name-hex">Terraform</div>
+                            <div class="skill-level">
+                                <div class="skill-level-fill" style="width: 87%"></div>
+                            </div>
+                            <div class="skill-percentage-hex">87%</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-hexagon">
+                    <div class="hexagon-inner">
+                        <div class="hexagon-content">
+                            <div class="skill-icon-hex">🔄</div>
+                            <div class="skill-name-hex">CI/CD</div>
+                            <div class="skill-level">
+                                <div class="skill-level-fill" style="width: 90%"></div>
+                            </div>
+                            <div class="skill-percentage-hex">90%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / Quote Section -->
+    <section class="contact-section" id="contact">
+        <div class="section-header">
+            <h2 class="section-title">Start Your Project</h2>
+            <p class="section-subtitle">Tell us about your infrastructure — we'll follow up within 24 hours.</p>
+        </div>
+
+        <div class="contact-container">
+            <div class="contact-info">
+                <a href="https://maps.google.com/?q=Silicon+Valley+CA+94025" target="_blank" class="info-item">
+                    <div class="info-icon">📍</div>
+                    <div class="info-text">
+                        <h4>Location</h4>
+                        <p>Silicon Valley, CA 94025</p>
+                    </div>
+                </a>
+
+                <a href="mailto:hello@reduxlax.io" class="info-item">
+                    <div class="info-icon">📧</div>
+                    <div class="info-text">
+                        <h4>Email</h4>
+                        <p>hello@reduxlax.io</p>
+                    </div>
+                </a>
+
+                <a href="tel:+15551234567" class="info-item">
+                    <div class="info-icon">📱</div>
+                    <div class="info-text">
+                        <h4>Phone</h4>
+                        <p>+1 (555) 123-4567</p>
+                    </div>
+                </a>
+
+                <a href="https://calendly.com" target="_blank" class="info-item">
+                    <div class="info-icon">📅</div>
+                    <div class="info-text">
+                        <h4>Schedule Meeting</h4>
+                        <p>Book a consultation</p>
+                    </div>
+                </a>
+            </div>
+
+            <form class="contact-form" id="contactForm" action="https://formspree.io/f/mvkpeqnz" method="POST">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Project Type</label>
+                    <input type="text" id="subject" name="subject" placeholder="e.g. Cloud migration, DevOps setup" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Tell us about your infrastructure and timeline" required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Transmit Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <div class="logo-icon">
+                        <div class="logo-redux">
+                            <div class="snowflake">
+                                <span class="arm">
+                                    <span class="branch-bottom-l"></span>
+                                    <span class="branch-bottom-r"></span>
+                                </span>
+                                <span class="arm">
+                                    <span class="branch-bottom-l"></span>
+                                    <span class="branch-bottom-r"></span>
+                                </span>
+                                <span class="arm">
+                                    <span class="branch-bottom-l"></span>
+                                    <span class="branch-bottom-r"></span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="logo-text">
+                        <span class="redux">snow</span>
+                        <span class="lax">flake</span>
+                    </span>
+                </div>
+                <p class="footer-description">
+                    Loading complex challenges into brilliant solutions through the convergence of art, science, and technology.
+                </p>
+                <div class="footer-social">
+                    <a href="#" class="social-icon">f</a>
+                    <a href="#" class="social-icon">t</a>
+                    <a href="#" class="social-icon">in</a>
+                    <a href="#" class="social-icon">ig</a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h4>Services</h4>
+                <div class="footer-links">
+                    <a href="web_development.html">Web Development</a>
+                    <a href="app_development.html">App Development</a>
+                    <a href="cloud_solutions.html">Cloud Solutions</a>
+                    <a href="ai_integration.html">AI Integration</a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h4>Company</h4>
+                <div class="footer-links">
+                    <a href="../company/about.html">About Us</a>
+                    <a href="../company/team.html">Our Team</a>
+                    <a href="../company/careers.html">Careers</a>
+                    <a href="../company/press_kit.html">Press Kit</a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h4>Resources</h4>
+                <div class="footer-links">
+                    <a href="../resources/docs.html">Documentation</a>
+                    <a href="../resources/api_reference.html">API Reference</a>
+                    <a href="../resources/blog.html">Blog</a>
+                    <a href="../resources/support.html">Support</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="copyright">
+                © 2026 Monetz. All rights reserved.
+            </div>
+            <div class="footer-credits">
+                Designed by <a href="#" rel="nofollow" target="_blank">Monetz</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="cloud_solutions.js"></script>
+</body>
+</html>

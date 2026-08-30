@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - Monetz</title>
+    <link rel="stylesheet" href="support.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-redux">
+                <div class="snowflake">
+                    <span class="arm">
+                        <span class="branch-bottom-l"></span>
+                        <span class="branch-bottom-r"></span>
+                    </span>
+                    <span class="arm">
+                        <span class="branch-bottom-l"></span>
+                        <span class="branch-bottom-r"></span>
+                    </span>
+                    <span class="arm">
+                        <span class="branch-bottom-l"></span>
+                        <span class="branch-bottom-r"></span>
+                    </span>
+                </div>
+            </div>
+            <div style="color: var(--accent-purple); font-size: 18px; text-transform: uppercase; letter-spacing: 3px;">Loading...</div>
+        </div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="header" id="header">
+        <nav class="nav-container">
+            <a href="../index.html#home" class="logo">
+                <div class="logo-icon">
+                    <div class="logo-redux">
+                        <div class="snowflake">
+                            <span class="arm">
+                                <span class="branch-bottom-l"></span>
+                                <span class="branch-bottom-r"></span>
+                            </span>
+                            <span class="arm">
+                                <span class="branch-bottom-l"></span>
+                                <span class="branch-bottom-r"></span>
+                            </span>
+                            <span class="arm">
+                                <span class="branch-bottom-l"></span>
+                                <span class="branch-bottom-r"></span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <span class="logo-text">
+                    <span class="redux">snow</span>
+                    <span class="lax">flake</span>
+                </span>
+            </a>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="../index.html#home" class="nav-link">Home</a></li>
+                <li><a href="docs.html" class="nav-link">Docs</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="support.html" class="nav-link active">Support</a></li>
+                <li><a href="../index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Search Hero + Category Tiles -->
+    <section class="support-hero" id="home">
+        <div class="breadcrumb">
+            <a href="../index.html#home">Home</a> / Support
+        </div>
+        <h1>How Can We Help?</h1>
+        <div class="docs-search">
+            <span class="docs-search-icon">🔍</span>
+            <input type="text" placeholder="Search help articles..." id="faqSearch" autocomplete="off">
+        </div>
+    </section>
+
+    <div class="category-tile-grid" id="categoryTiles">
+        <div class="category-tile active" data-cat="all">
+            <div class="category-tile-icon">📋</div>
+            <div class="category-tile-label">All Topics</div>
+        </div>
+        <div class="category-tile" data-cat="billing">
+            <div class="category-tile-icon">💳</div>
+            <div class="category-tile-label">Billing</div>
+        </div>
+        <div class="category-tile" data-cat="technical">
+            <div class="category-tile-icon">🛠️</div>
+            <div class="category-tile-label">Technical</div>
+        </div>
+        <div class="category-tile" data-cat="account">
+            <div class="category-tile-icon">👤</div>
+            <div class="category-tile-label">Account</div>
+        </div>
+        <div class="category-tile" data-cat="projects">
+            <div class="category-tile-icon">📁</div>
+            <div class="category-tile-label">Projects</div>
+        </div>
+    </div>
+
+    <!-- Status Band -->
+    <div class="status-band">
+        <div class="status-band-inner">
+            <span class="status-dot"></span>
+            <span>All Systems Operational</span>
+            <a href="#">View status page →</a>
+        </div>
+    </div>
+
+    <!-- FAQ -->
+    <section class="faq-section" id="faq">
+        <div class="section-header">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <p class="section-subtitle">Search above or browse by topic</p>
+        </div>
+
+        <div class="faq-list" id="faqList">
+            <div class="faq-item" data-cat="billing">
+                <div class="faq-question">
+                    <span class="faq-question-text">How does billing work for ongoing projects?</span>
+                    <div class="faq-toggle">+</div>
+                </div>
+                <div class="faq-answer">
+                    <p>Fixed-scope projects are billed in milestones — typically 30% upfront, 40% at midpoint, and 30% on delivery. Ongoing retainer work is billed monthly in advance.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" data-cat="billing">
+                <div class="faq-question">
+                    <span class="faq-question-text">Can I get a refund if I'm not satisfied?</span>
+                    <div class="faq-toggle">+</div>
+                </div>
+                <div class="faq-answer">
+                    <p>Milestone payments are refundable for undelivered work. Once a milestone is delivered and approved, that portion becomes non-refundable — this is covered in your project agreement.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" data-cat="technical">
+                <div class="faq-question">
+                    <span class="faq-question-text">What happens if my site goes down after launch?</span>
+                    <div class="faq-toggle">+</div>
+                </div>
+                <div class="faq-answer">
+                    <p>All launched projects include 30 days of post-launch monitoring at no cost. After that, uptime monitoring and incident response are available under a support retainer.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" data-cat="technical">
+                <div class="faq-question">
+                    <span class="faq-question-text">Do you provide the source code and hosting access?</span>
+                    <div class="faq-toggle">+</div>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes. You get full repository access and hosting/infrastructure credentials on delivery — nothing is held back or licensed exclusively to us.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" data-cat="account">
+                <div class="faq-question">
+                    <span class="faq-question-text">How do I update the email on my account?</span>
+                    <div class="faq-toggle">+</div>
+                </div>
+                <div class="faq-answer">
+                    <p>Go to Settings → Account in your dashboard and update your email. You'll get a confirmation link at the new address before the change takes effect.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" data-cat="account">
+                <div class="faq-question">
+                    <span class="faq-question-text">Can multiple team members access one account?</span>
+                    <div class="faq-toggle">+</div>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, you can invite teammates with view or admin roles from Settings → Team. There's no limit on the number of seats.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" data-cat="projects">
+                <div class="faq-question">
+                    <span class="faq-question-text">How long does a typical project take?</span>
+                    <div class="faq-toggle">+</div>
+                </div>
+                <div class="faq-answer">
+                    <p>Most web projects take 4–8 weeks from kickoff to launch. Mobile apps and larger platform builds typically run 10–16 weeks depending on scope.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" data-cat="projects">
+                <div class="faq-question">
+                    <span class="faq-question-text">Can I request changes after a project is delivered?</span>
+                    <div class="faq-toggle">+</div>
+                </div>
+                <div class="faq-answer">
+                    <p>Small fixes within 30 days of launch are included. Beyond that, changes are scoped and quoted as a new engagement or covered under a support retainer.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="no-results-message" id="noFaqResults">No results found. Try a different search term.</div>
+    </section>
+
+    <!-- Contact Channels -->
+    <section class="channel-section" id="channels">
+        <div class="section-header">
+            <h2 class="section-title">Still Need Help?</h2>
+            <p class="section-subtitle">Reach us however's easiest for you</p>
+        </div>
+
+        <div class="channel-grid">
+            <a href="mailto:support@reduxlax.io" class="channel-card">
+                <div class="channel-icon">📧</div>
+                <div class="channel-title">Email Support</div>
+                <p class="channel-desc">support@reduxlax.io — we respond within one business day.</p>
+            </a>
+
+            <a href="#" class="channel-card">
+                <div class="channel-icon">💬</div>
+                <div class="channel-title">Live Chat</div>
+                <p class="channel-desc">Chat with the team directly, Monday–Friday, 9am–6pm PT.</p>
+            </a>
+
+            <a href="#" class="channel-card">
+                <div class="channel-icon">👥</div>
+                <div class="channel-title">Community Forum</div>
+                <p class="channel-desc">Ask questions and browse answers from other clients.</p>
+            </a>
+        </div>
+    </section>
+
+    <!-- Ticket Form -->
+    <section class="ticket-section" id="ticket">
+        <div class="section-header">
+            <h2 class="section-title">Submit a Ticket</h2>
+            <p class="section-subtitle">For anything the FAQ didn't cover</p>
+        </div>
+
+        <div class="ticket-card">
+            <form id="ticketForm" action="https://formspree.io/f/mvkpeqnz" method="POST">
+                <div class="ticket-form-row">
+                    <div class="form-group">
+                        <label for="ticketName">Name</label>
+                        <input type="text" id="ticketName" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="ticketEmail">Email</label>
+                        <input type="email" id="ticketEmail" name="email" required>
+                    </div>
+                </div>
+
+                <div class="ticket-form-row">
+                    <div class="form-group">
+                        <label for="ticketCategory">Category</label>
+                        <select id="ticketCategory" name="category" required>
+                            <option value="">Select one</option>
+                            <option value="billing">Billing</option>
+                            <option value="technical">Technical</option>
+                            <option value="account">Account</option>
+                            <option value="projects">Projects</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="ticketPriority">Priority</label>
+                        <select id="ticketPriority" name="priority" required>
+                            <option value="low">Low</option>
+                            <option value="normal" selected>Normal</option>
+                            <option value="high">High</option>
+                            <option value="urgent">Urgent</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="ticketMessage">Describe the Issue</label>
+                    <textarea id="ticketMessage" name="message" required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Submit Ticket</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <div class="logo-icon">
+                        <div class="logo-redux">
+                            <div class="snowflake">
+                                <span class="arm">
+                                    <span class="branch-bottom-l"></span>
+                                    <span class="branch-bottom-r"></span>
+                                </span>
+                                <span class="arm">
+                                    <span class="branch-bottom-l"></span>
+                                    <span class="branch-bottom-r"></span>
+                                </span>
+                                <span class="arm">
+                                    <span class="branch-bottom-l"></span>
+                                    <span class="branch-bottom-r"></span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="logo-text">
+                        <span class="redux">snow</span>
+                        <span class="lax">flake</span>
+                    </span>
+                </div>
+                <p class="footer-description">
+                    Loading complex challenges into brilliant solutions through the convergence of art, science, and technology.
+                </p>
+                <div class="footer-social">
+                    <a href="#" class="social-icon">f</a>
+                    <a href="#" class="social-icon">t</a>
+                    <a href="#" class="social-icon">in</a>
+                    <a href="#" class="social-icon">ig</a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h4>Services</h4>
+                <div class="footer-links">
+                    <a href="../services/web_development.html">Web Development</a>
+                    <a href="../services/app_development.html">App Development</a>
+                    <a href="../services/cloud_solutions.html">Cloud Solutions</a>
+                    <a href="../services/ai_integration.html">AI Integration</a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h4>Company</h4>
+                <div class="footer-links">
+                    <a href="../company/about.html">About Us</a>
+                    <a href="../company/team.html">Our Team</a>
+                    <a href="../company/careers.html">Careers</a>
+                    <a href="../company/press_kit.html">Press Kit</a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h4>Resources</h4>
+                <div class="footer-links">
+                    <a href="docs.html">Documentation</a>
+                    <a href="api_reference.html">API Reference</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="support.html">Support</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="copyright">
+                © 2026 Monetz. All rights reserved.
+            </div>
+            <div class="footer-credits">
+                Designed by <a href="#" rel="nofollow" target="_blank">Monetz</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="support.js"></script>
+</body>
+</html>
